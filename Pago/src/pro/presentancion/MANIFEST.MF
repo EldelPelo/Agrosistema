@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+
+Name: COMPONENTE
+nombre: pro.cableado.IPago
+clase: pro.presentancion.Pago
