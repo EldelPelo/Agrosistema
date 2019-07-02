@@ -8,7 +8,8 @@ public class PagoEfectivo implements IPago{
 
 	@Override
 	public void capturarPago() {
-		JOptionPane.showMessageDialog(null, "capturarPago");
+		float valorProducto;
+		
 	}
 
 }
