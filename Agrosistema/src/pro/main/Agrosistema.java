@@ -36,7 +36,7 @@ public class Agrosistema {
 			if(cls!=null) {
 				System.out.println("Pag");
 				IPago ir = (IPago)cls.newInstance();
-				ir.capturarPago();
+				//ir.capturarPago();
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
