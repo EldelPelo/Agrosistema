@@ -1,5 +1,5 @@
 package pro.cableado;
 
 public interface IPago {
-	void capturarPago();
+	void capturarPago(String ID_Producto);
 }
