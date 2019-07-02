@@ -1,5 +1,9 @@
 package pro.main;
 
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import con.conexion.Conexion;
 import pro.cableado.IAutomatizacion;
 import pro.cableado.IGestionInsumos;
 import pro.cableado.IPago;
