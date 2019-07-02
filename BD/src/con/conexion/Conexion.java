@@ -10,7 +10,18 @@ public class Conexion {
 	private static final String USER = "postgres";
 	private static final String PASS = "postgres";
 	private static Connection conexion = null;
-	
+	public static Connection obteneConexion() {
+		try {
+			if(conexion==null) {
+				Class.forName("org.postgresql.Driver");
+				conexion = DriverManager.getConnection(URL, USER, PASS);
+				System.out.println("Conexion exitosa.");
+			}
+		}catch (Exception e) {
+			System.out.println("No se pudo conectar a la base de datos.");
+		}
+		return conexion;
+	}
 	private static void cargarDriver() {
 		try {
 			Class.forName("org.postgresql.Driver");
